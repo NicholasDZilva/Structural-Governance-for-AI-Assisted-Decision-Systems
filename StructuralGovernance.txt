@@ -1,0 +1,97 @@
+Structural Governance for AI-Assisted Decision Systems
+
+Nicholas D’Zilva | Invariant Systems
+
+1. Introduction
+Artificial intelligence (AI) systems are increasingly deployed to support policy analysis, crisis response, governance, and strategic decision-making. Their outputs are often treated as objective, comprehensive, and exhaustive. Yet this assumption can obscure a fundamental limitation: AI systems do not reason over reality directly. Instead, they operate over problem framings supplied by humans and institutions.
+
+Even perfectly trained, transparent, or “aligned” models can systematically exclude entire classes of solutions if the upstream framing restricts the solution space. This phenomenon, which we term framing bias, is distinct from model bias, dataset bias, or reward misalignment. Framing bias arises before the AI’s internal reasoning occurs, shaping which options are even considered.
+
+This paper highlights the structural risks associated with framing bias, documents evidence that this problem exists in practice, and motivates the need for governance mechanisms that operate at the architectural level, rather than relying solely on post-hoc monitoring or output filtering.
+
+2. Framing Bias as a Structural Property
+Framing bias can be understood as a system-level constraint imposed before optimization. It limits the solution space through assumptions, constraints, and incentive-aligned problem definitions. Unlike model bias, which emerges from training data or internal optimization, framing bias acts externally:
+
+Location: Between human intent and AI reasoning.
+
+Mechanism: Through implicit assumptions embedded in problem definition, institutional objectives, or feasibility constraints.
+
+Visibility: Because certain solutions never enter the model’s consideration, this bias is often invisible in output evaluation.
+
+Consequently, outputs may appear internally coherent and empirically grounded while systematically excluding entire classes of solutions that could otherwise be effective.
+
+3. Evidence of the Problem
+Documented cases in public literature demonstrate that framing bias is not hypothetical:
+
+Crisis Response Systems – Studies of AI-assisted disaster management tools show that solutions emphasizing informal, decentralized coordination are frequently excluded when prompts or institutional objectives prioritize regulatory compliance or centralized authority. 
+Solutions that could reduce local bottlenecks are underrepresented, even when effective in pilot testing.
+
+Healthcare Resource Allocation – AI models used for hospital bed management or pandemic response often constrain solutions to institutional scalability. Community-led or peripheral interventions are rarely suggested, despite evidence that they improve outcomes in localized contexts.
+
+Economic Policy Modeling – Analyses of AI-assisted economic planning indicate that prompts framed within existing legal or financial frameworks systematically exclude non-institutional or grassroots strategies, reducing the diversity of feasible interventions considered.
+
+These examples illustrate that AI outputs can reproduce institutional assumptions, not through malice or internal bias, but through structural omission. The evidence is sufficient to establish that framing bias is a real, observable problem affecting decision quality and solution diversity.
+
+
+4. Towards Structural Governance
+Given the existence of framing bias, governance mechanisms must operate at the architectural level, rather than relying solely on post-hoc monitoring, output moderation, or token-level filtering. Observing outputs alone is insufficient: the problem arises before the AI even generates a solution.
+Structural governance ensures that system design inherently prevents undesired drift, omission, or overrepresentation of particular solution classes. 
+
+By embedding constraints and evaluation principles into the architecture itself, the AI’s operational dynamics naturally maintain integrity under variance, rather than requiring corrective interventions after the fact.
+
+Key principles of structural governance include:
+Separation of Core Objectives from Contextual Models
+The system distinguishes between invariant goals (core operational principles) and mutable reasoning models (context-specific or situational strategies).
+
+This decoupling allows adaptive learning and exploration while preserving alignment with strategic objectives.
+
+Variance-Resilient Evaluation
+Decisions and candidate solutions are evaluated not only for correctness or feasibility but also for coverage across the intended solution space.
+Structural integrity is maintained when systemic dynamics prevent certain deviations or omissions by design, rather than by after-the-fact enforcement.
+
+Auditability without Disclosure of Proprietary Mechanics
+The architecture supports external verification that no categories of solutions are systematically excluded.
+Importantly, this can be accomplished without revealing proprietary scoring, filtering, or simulation methods, allowing organizations to demonstrate compliance and robustness while protecting intellectual property.
+Context-Agnostic Governance
+Governance operates above token or low-level outputs, focusing on the meta-level structure of solution space exploration.
+
+This contrasts with micro-level interventions like token scoring or lexical filtering, which may improve clarity but cannot prevent structural drift or omission.
+Feedback Loops for Continual Assessment
+External audits, comparative experiments, or scenario testing can confirm that solution space diversity is preserved under institutional or environmental constraints.
+These loops allow organizations to stress-test their systems against framing bias without exposing the underlying architecture.
+
+5. Illustrative Case: Suppressed Solutions in Urban Planning
+To make the effects of framing bias tangible, consider AI-assisted urban planning exercises. When problem definitions emphasize centralized authority, regulatory compliance, and large-scale budget optimization, certain high-impact solutions are systematically excluded.
+
+ For example, community-led micro-infrastructure projects—such as localized stormwater retention ponds, neighborhood traffic-calming initiatives, or small-scale renewable energy cooperatives—may never appear in the AI’s recommendations. These interventions are feasible, contextually relevant, and deliver direct human benefits, yet they conflict with institutional priorities embedded in the framing.
+
+This example illustrates the subtlety of framing bias: the AI output may be internally coherent, procedurally correct, and even empirically supported, but it remains structurally incomplete. The suppressed solutions are not identified due to model failure or lack of data—they are invisible because the problem framing itself limits the solution space, favoring institutional continuity over peripheral or decentralized interventions. Such patterns underscore the importance of auditing solution spaces structurally, revealing what is omitted before any optimization or implementation occurs.
+
+6. Implications for AI Practitioners and Policymakers
+Structural governance has broad relevance for organizations deploying AI in decision-critical contexts:
+
+For AI Developers:
+Design systems where solution space integrity is preserved by architecture, not by post-hoc filtering.
+Separate core objectives from contextual reasoning models to allow adaptive learning without compromising strategic alignment.
+Build systems that can be audited for framing bias externally without exposing proprietary mechanisms.
+
+For Policymakers and Oversight Bodies:
+Evaluate AI recommendations with awareness of framing bias: what solutions were never generated, and why?
+Demand governance standards that prioritize structural resilience over superficial compliance checks.
+Recognize that outputs alone are insufficient evidence of neutrality or completeness.
+
+For Researchers and Analysts:
+Study framing bias as a distinct phenomenon from traditional model bias.
+Explore methods for external, meta-level auditing to reveal suppressed solution classes.
+Consider architectural interventions as a complementary area of research alongside data fairness and alignment studies.
+
+7. Conclusion
+Even highly capable AI systems can systematically exclude viable solutions due to problem framing constraints, independent of internal model quality, training data, or alignment efforts. Structural governance addresses this by embedding resilience and diversity into the system architecture itself, ensuring that integrity under variance emerges naturally rather than being enforced externally.
+
+This approach:
+Preserves solution space diversity, including options outside dominant institutional frames.
+Provides auditable evidence that framing bias is managed without disclosing proprietary methods.
+Positions organizations to deploy AI with confidence, demonstrating robustness, fairness, and adaptability in high-stakes decision environments.
+By shifting the focus from controlling outputs to designing governance into system structure, this framework offers a strategic, forward-looking method to address one of the most subtle and consequential limitations of AI-assisted decision-making.
+
+
